@@ -5,7 +5,7 @@
 	 this.strength  = strength ;
 	 this.presentStyle  = presentStyle ;
 	 this.imperfektStyle  = imperfektStyle ;
-	 this.presentStrong = presentStrong ;
+	 this.presentStrong = presentStrong ;  
 	 this.imperfektStrong  = imperfektStrong ;
  	 this.presentPerfektStyle  = presentPerfektStyle ;
    }
