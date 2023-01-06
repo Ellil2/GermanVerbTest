@@ -5,7 +5,7 @@
 	 this.strength  = strength ;
 	 this.presentStyle  = presentStyle ;
 	 this.imperfektStyle  = imperfektStyle ;
-	 this.presentStrong = presentStrong ;  
+	 this.presentStrong = presentStrong ;
 	 this.imperfektStrong  = imperfektStrong ;
  	 this.presentPerfektStyle  = presentPerfektStyle ;
    }
@@ -130,11 +130,16 @@ console.log(chosenVerb.auxiliary)
 
 
 if(verbForm === ""){verbForm = chosenVerb.root + chosenTense[0][pronounNumber] }
+
+/*
 var answer = prompt(pronounChosen[0] + ", " + chosenVerb.name + " (" + chosenVerb.strength +  "), " + tenseName)
 
 if (answer == pronounChosen[2] + verbForm){alert("Correct!")}
 
 document.getElementById("sentenceBox").innerHTML = answer + "  ||  " + pronounChosen[2] + verbForm
+*/
+document.getElementById("testBox").innerHTML = pronounChosen[0] + ", " + chosenVerb.name + " (" + chosenVerb.strength +  "), " + tenseName 
+document.getElementById("sentenceBox").innerHTML =  pronounChosen[2] + verbForm
 document.getElementById("Box1").innerHTML = explanation
 document.getElementById("Box2").innerHTML = explanation2
 explanation = ""
@@ -142,3 +147,58 @@ explanation2 = ""
 }
 
 
+function DeclinationsTest(){}
+	
+ var Preposition = function(name,translation,type){
+	 this.name = name;
+	 this.translation = translation;
+	 this.type = type;
+ }
+
+function DeclinationsTest(){
+	
+ var Word = function(name,translation,gender){
+	 this.name = name;
+	 this.translation = translation;
+	 this.gender = gender;
+ }
+
+prepositionsList = [
+ aus = new Preposition("preposition","aus","dativ","from"),
+// bei = new Preposition("preposition","bei","dativ","at"),
+ mit = new Preposition("preposition","mit","dativ","with"),
+ gegenüber = new Preposition("preposition","gegenüber","dativ","opposite to"),
+// nach = new Preposition("preposition","nach","dativ","after"),
+ seit = new Preposition("preposition","seit","dativ","since"),
+ von = new Preposition("preposition","von","dativ","of"),
+ zu = new Preposition("preposition","zu","dativ","to"),
+// bis = new Preposition("preposition","bis","accusativ","until"),
+ durch = new Preposition("preposition","durch","accusativ","across"),
+// entlang = new Preposition("preposition","entlang","accusativ","along"),
+ um = new Preposition("preposition","um","accusativ","at"),
+// für = new Preposition("preposition","für","accusativ","for"),
+// gegen = new Preposition("preposition","gegen","accusativ","against"),
+// ohne = new Preposition("preposition","ohne","accusativ","without"),
+// an = new Preposition("preposition","an","both","on"),
+// auf = new Preposition("preposition","auf","both","upon"),
+ hinter = new Preposition("preposition","hinter","both","behind"),
+ unter = new Preposition("preposition","unter","both","under"),
+ inn = new Preposition("preposition","in","both","in"),
+// neben = new Preposition("preposition","neben","both","next to"),
+ zwischen = new Preposition("preposition","zwischen","both","between")
+	]
+	
+var wordList = [
+
+hund = new Word("noun","hund","dog","masc"),
+katze = new Word("noun","katze","cat","fem"),
+bruder = new Word("noun","bruder","brother","masc"),
+madchen = new Word("noun","madchen","girl","neuter"),
+
+
+]	
+	
+	
+	
+	
+} 
